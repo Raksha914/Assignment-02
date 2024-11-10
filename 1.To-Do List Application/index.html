@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>To - Do List</h1>
+      <div class="theme-change">
+        <button id="btn-toggle">
+          <i class="bi bi-moon-stars-fill"></i> Click for Dark Mode
+        </button>
+      </div>
+      <div class="container1">
+        <input type="text" id="input" placeholder="Add Tasks" />
+        <select id="priority">
+          <option disabled selected>Select Priority</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <button id="Task-btn">Add Task</button>
+
+        <div class="mark-tasks">
+          <button id="all">All Tasks</button>
+          <button id="completed">Completed Tasks</button>
+          <button id="incompleted">Incompleted Tasks</button>
+        </div>
+        <button id="sort">Sort by Priority</button>
+        <ul id="unordered-list"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

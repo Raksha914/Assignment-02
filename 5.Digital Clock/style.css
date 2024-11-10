@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.clock-container {
+  text-align: center;
+  border: 0.5px solid rgb(174, 174, 175);
+  padding: 70px;
+  border-radius: 100%;
+}
+.time,
+.date {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+button#theme-change {
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-change {
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
+body.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.dark-mode button#theme-change {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@media (max-width: 600px) {
+  .time,
+  .date {
+    font-size: 1.5em;
+  }
+  .clock-container {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1040px) {
+  .time,
+  .date {
+    font-size: 2.5em;
+  }
+  .clock-container {
+    padding: 50px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1040px) and (max-width: 1200px) {
+  .time,
+  .date {
+    font-size: 3em;
+  }
+  .clock-container {
+    padding: 40px;
+    font-size: 20px;
+  }
+}

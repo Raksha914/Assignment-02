@@ -1,0 +1,111 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+.calculator {
+  width: 250px;
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+#display {
+  width: 95%;
+  height: 50px;
+  font-size: 1.5em;
+  text-align: right;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+button {
+  padding: 15px;
+  font-size: 1.2em;
+}
+.operator {
+  background-color: #f2a33e;
+  color: #fff;
+}
+.equals {
+  background-color: #4caf50;
+  color: #fff;
+}
+.clear {
+  background-color: #f44336;
+  color: #fff;
+}
+
+button#theme-change {
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#theme-change {
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
+body.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.dark-mode button#theme-change {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+@media (max-width: 600px) {
+  .calculator {
+    width: 100%;
+    padding: 10px;
+  }
+  #display {
+    font-size: 1.2em;
+  }
+  button {
+    padding: 10px;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1040px) {
+  .calculator {
+    width: 80%;
+    max-width: 350px;
+    padding: 20px;
+  }
+  #display {
+    font-size: 1.4em;
+  }
+  button {
+    padding: 12px;
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 1040px) and (max-width: 1200px) {
+  .calculator {
+    width: 300px;
+    padding: 25px;
+  }
+  #display {
+    font-size: 1.5em;
+  }
+  button {
+    padding: 15px;
+    font-size: 1.2em;
+  }
+}

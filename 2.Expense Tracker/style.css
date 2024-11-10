@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.expense-tracker {
+  height: 90vh;
+  width: 70%;
+  /* background-color: #784d4d; */
+  margin-left: 15%;
+  padding: 20px;
+  margin-top: 3%;
+  border: 0.2px solid navy;
+  border-radius: 20px;
+  box-shadow: 5px 5px 25px lightblue;
+}
+
+h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+
+form,
+#filter,
+#total {
+  margin-bottom: 15px;
+  margin-left: 70px;
+}
+
+#Description,
+#Amount,
+#Category {
+  /* border-radius: 5px; */
+  border: none;
+  border-bottom: 0.5px solid navy;
+}
+
+#Category {
+  margin-bottom: 20px;
+}
+
+#filter {
+  width: 350px;
+  border-radius: 15px;
+}
+
+input,
+select {
+  width: 75%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+button {
+  width: 25%;
+  padding: 8px;
+  margin: 5px 0;
+  background-color: #f19552;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+#expense-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.expense-item {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  border-bottom: 0.5px solid #ddd;
+}
+
+@media (max-width: 600px) {
+  .expense-tracker {
+    width: 70%;
+  }
+  input,
+  select {
+    width: 80%;
+    font-size: 14px;
+    margin-left: -40px;
+  }
+  button {
+    width: 50%;
+    font-size: 14px;
+  }
+  #filter {
+    width: 55%;
+    margin-left: 50px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  #expense-list {
+    font-size: 14px;
+  }
+  .expense-item {
+    flex-direction: column;
+    text-align: left;
+    padding: 10px 0;
+  }
+  .expense-item button {
+    width: 45%;
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .expense-tracker {
+    width: 80%;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  input,
+  select {
+    width: 85%;
+  }
+  button {
+    width: 30%;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+  .expense-tracker {
+    width: 70%;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  #filter,
+  #total {
+    margin-left: 70px;
+  }
+  .expense-item {
+    font-size: 18px;
+  }
+  button {
+    width: 20%;
+  }
+}
