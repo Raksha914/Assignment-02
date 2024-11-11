@@ -8,13 +8,11 @@ body {
 }
 .clock-container {
   text-align: center;
-  border: 0.5px solid rgb(174, 174, 175);
   padding: 70px;
-  border-radius: 100%;
 }
 .time,
 .date {
-  font-size: 2em;
+  font-size: 75px;
   margin: 10px 0;
 }
 
@@ -35,7 +33,7 @@ button#theme-change {
 }
 
 body.dark-mode {
-  background-color: #333333;
+  background-color: #2e2e2e;
   color: #ffffff;
 }
 
