@@ -5,6 +5,10 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-image: url(images/light\ theme.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* color: #fff; */
 }
 .clock-container {
   text-align: center;
@@ -33,7 +37,9 @@ button#theme-change {
 }
 
 body.dark-mode {
-  background-color: #2e2e2e;
+  background-image: url(images/dark\ theme.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #ffffff;
 }
 
