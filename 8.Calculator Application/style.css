@@ -10,7 +10,7 @@ body {
 }
 .calculator {
   width: 250px;
-  border: 1px solid #ddd;
+  border: 1px solid #000;
   padding: 15px;
 }
 #display {
@@ -20,7 +20,7 @@ body {
   text-align: right;
   padding: 5px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #282727;
 }
 .buttons {
   display: grid;
