@@ -6,283 +6,314 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
   </head>
-  <body>
-    <div class="header">
-      <div class="container">
-        <nav>
-          <img src="images/logo.jpg" alt="logo" class="logo" />
-          <ul>
-            <li id="nav-bar"><a href="#">Home</a></li>
-            <li id="nav-bar"><a href="#">About</a></li>
-            <li id="nav-bar"><a href="#">Services</a></li>
-            <li id="nav-bar"><a href="#">Portfolio</a></li>
-            <li id="nav-bar"><a href="#">Contact</a></li>
-            <button id="themeToggle">Light Mode</button>
-          </ul>
-        </nav>
-        <div class="header-text">
-          <p>Software Developer</p>
-          <h1>Hi, I'm <span>Raksha</span></h1>
+  <body id="body">
+    <header class="container-fluid" id="header">
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid bg-info">
+          <img src="images/logo.jpg" alt="logo" class="rounded ms-4" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="http://127.0.0.1:5500/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about-section">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Project Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contcat</a>
+              </li>
+              <li class="nav-item">
+                <button
+                  id="themeToggle"
+                  class="fs-6 text-decoration-none border border-0 p-2 rounded shadow-sm"
+                >
+                  Dark Mode
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero section -->
+    <div class="container d-flex" id="hero-section">
+      <section class="container-fluid" id="heroSection-1">
+        <div class="container">
+          <p class="text-uppercase" id="welcome">welcome to my world</p>
+          <span id="paragraph">
+            Hi, <strong class="strong">I'm Raksha</strong> <br />
+            a developer
+          </span>
+          <p class="para">
+            My passion is creating functional and reliable applications
+            <br />that solve real problems and make users' lives easier
+          </p>
+        </div>
+        <div class="container">
+          <p class="text-uppercase" id="second-para">Find with me</p>
+        </div>
+        <div class="container">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-linkedin"></i>
+        </div>
+      </section>
+      <section class="container-fluid flex-wrap">
+        <p class="shadow-lg border border-2" id="flex-para">
+          <img src="images/1.jpg" id="hero-image" />
+        </p>
+      </section>
+    </div>
+    <div class="container">
+      <p class="border-bottom mt-5"></p>
+    </div>
+
+    <!-- about section -->
+    <div class="container d-flex mt-5" id="about-section">
+      <section>
+        <h1 class="mb-3" id="about-me">About Me</h1>
+        <img src="images/heroforsmallscreens.jpg" alt="images" />
+      </section>
+
+      <!-- Skills Section -->
+      <div class="container my-5" id="Skill-Section">
+        <h2 class="mb-4" id="my-skills">My Skills</h2>
+
+        <!-- Skill 1 with Progress Bar -->
+        <div class="mb-3">
+          <p class="mb-1">HTML <i class="bi bi-code-slash"></i></p>
+          <div class="progress">
+            <div
+              class="progress-bar bg-success"
+              role="progressbar"
+              style="width: 90%"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              90%
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 2 with Progress Bar -->
+        <div class="mb-3">
+          <p class="mb-1">CSS <i class="bi bi-palette-fill"></i></p>
+          <div class="progress">
+            <div
+              class="progress-bar bg-info"
+              role="progressbar"
+              style="width: 85%"
+              aria-valuenow="85"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              85%
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 3 with Progress Bar -->
+        <div class="mb-3">
+          <p class="mb-1">JavaScript <i class="bi bi-lightning-fill"></i></p>
+          <div class="progress">
+            <div
+              class="progress-bar bg-warning"
+              role="progressbar"
+              style="width: 75%"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              75%
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 4 with Progress Bar -->
+        <div class="mb-3">
+          <p class="mb-1">React <i class="bi bi-gem"></i></p>
+          <div class="progress">
+            <div
+              class="progress-bar bg-primary"
+              role="progressbar"
+              style="width: 70%"
+              aria-valuenow="70"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              70%
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 5 with Progress Bar -->
+        <div class="mb-3">
+          <p class="mb-1">Node.js <i class="bi bi-server"></i></p>
+          <div class="progress">
+            <div
+              class="progress-bar bg-secondary"
+              role="progressbar"
+              style="width: 65%"
+              aria-valuenow="65"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              65%
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div id="about">
+
+    <!-- project gallery -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Project Gallery</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="image" />
+            <div class="layer">
+              <h3>News App</h3>
+              <p>
+                The app contents you to the talented people around the world.
+                Download it from play store
+              </p>
+              <a href="https://github.com/Raksha914/Times-of-India-website-"
+                ><i class="bi bi-box-arrow-up-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="image" />
+            <div class="layer">
+              <h3>ChairShop App</h3>
+              <p>
+                The app contents you the talented people around the world.
+                Download it from play store
+              </p>
+              <a href="https://github.com/Raksha914/Chairshop-application"
+                ><i class="bi bi-box-arrow-up-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work" id="work">
+            <img src="images/work-3.png" alt="image" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The app contents you the talented people around the world.
+                Download it from play store
+              </p>
+              <a href="https://github.com/Raksha914/E-commerce-Application"
+                ><i class="bi bi-box-arrow-up-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/Raksha914?tab=repositories" class="btn"
+          >See more</a
+        >
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
       <div class="container">
         <div class="row">
-          <div class="abut-col-1">
-            <img src="images/heroforsmallscreens.jpg" alt="images" />
-          </div>
-          <div class="abut-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-              Hello! I'm Raksha, a passionate and enthusiastic front-end
-              developer with a keen interest in crafting beautiful and
-              functional websites. As a fresher, I have a strong foundation in
-              HTML, CSS, and JavaScript, and I'm constantly learning new
-              technologies to enhance my skills. My goal is to create
-              user-friendly and responsive websites that deliver a great
-              experience across all devices. I enjoy tackling new challenges and
-              collaborating with others to bring ideas to life.
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p style="margin-left: 25px">
+              <i class="bi bi-send"></i>rakshaa818@gmail.com
             </p>
-
-            <div class="tab-contents active-tabs">
-              <main>
-                <div class="skills">
-                  <section id="html">
-                    <h2>HTML Skills</h2>
-                    <img src="images/html.png" />
-                    <ul>
-                      <li>Semantic HTML</li>
-                      <li>Forms</li>
-                      <li>HTML5 Elements</li>
-                      <li>Linking External Resources</li>
-                      <li>Responsive Design</li>
-                    </ul>
-                  </section>
-                </div>
-
-                <div class="skills">
-                  <section id="css">
-                    <h2>CSS Skills</h2>
-                    <img src="images/css.jpg" />
-                    <ul>
-                      <li>Selectors & Specificity</li>
-                      <li>Box Model</li>
-                      <li>Positioning</li>
-                      <li>Flexbox</li>
-                      <li>Animations & Transitions</li>
-                    </ul>
-                  </section>
-                </div>
-
-                <div class="skills">
-                  <section id="js">
-                    <h2>JavaScript Skills</h2>
-                    <img src="images/JavaScript.png" />
-                    <ul>
-                      <li>Variables & Data Types</li>
-                      <li>DOM Manipulation</li>
-                      <li>Event Handling</li>
-                      <li>Promises & Async/Await</li>
-                      <li>Array Methods</li>
-                    </ul>
-                  </section>
-                </div>
-
-                <div class="skills">
-                  <section id="react">
-                    <h2>React Skills</h2>
-                    <img src="images/react.png" alt="" />
-                    <ul>
-                      <li>JSX Syntax</li>
-                      <li>Components (Functional & Class-based)</li>
-                      <li>Props & State</li>
-                      <li>React Router</li>
-                      <li>Hooks</li>
-                    </ul>
-                  </section>
-                </div>
-              </main>
+            <p style="margin-left: 25px">
+              <i class="bi bi-telephone"></i>
+              8431970396
+            </p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/Raksha914?tab=repositories"
+                ><i class="bi bi-github"></i
+              ></a>
             </div>
+            <a
+              href="images/my-cv.pdf"
+              download=""
+              class="btn-btn2"
+              style="margin-left: 25px"
+              >Download CV</a
+            >
           </div>
-        </div>
-      </div>
-      <div id="services">
-        <div class="container">
-          <h1 class="sub-title">My Services</h1>
-          <div class="sevices-list">
-            <div>
-              <i class="bi bi-code-slash"></i>
-              <h2>Web design</h2>
-              <p>
-                Building modern, mobile-friendly websites that enhance user
-                experience. Our designs are optimized for both aesthetic appeal
-                and seamless functionality. Let your brand stand out with our
-                custom web design solutions.
-              </p>
-              <a href="#">Learn More</a>
-            </div>
-            <div>
-              <i class="bi bi-app-indicator"></i>
-              <h2>App design</h2>
-              <p>
-                Creating sleek and intuitive mobile applications that provide
-                seamless user experiences. From user interface design to
-                functionality, I focus on crafting apps that are both
-                aesthetically pleasing and highly functional. Let's bring your
-                app ideas to life with a design that stands out.
-              </p>
-              <a href="#">Learn More</a>
-            </div>
-            <div>
-              <i class="bi bi-crop"></i>
-              <h2>Game design</h2>
-              <p>
-                Creating immersive game worlds with captivating visuals and
-                engaging gameplay. Skilled in designing user-friendly interfaces
-                and interactive elements that enhance player experience.
-                Passionate about storytelling and delivering memorable gaming
-                adventures.
-              </p>
-              <a href="#">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="portfolio">
-        <div class="container">
-          <h1 class="sub-title">Project Gallery</h1>
-          <div class="work-list">
-            <div class="work">
-              <img src="images/work-1.png" alt="image" />
-              <div class="layer">
-                <h3>News App</h3>
-                <p>
-                  The app contents you to the talented people around the world.
-                  Download it from play store
-                </p>
-                <a href="https://github.com/Raksha914/Times-of-India-website-"
-                  ><i class="bi bi-box-arrow-up-right"></i
-                ></a>
-              </div>
-            </div>
-            <div class="work">
-              <img src="images/work-2.png" alt="image" />
-              <div class="layer">
-                <h3>ChairShop App</h3>
-                <p>
-                  The app contents you the talented people around the world.
-                  Download it from play store
-                </p>
-                <a href="https://github.com/Raksha914/Chairshop-application"
-                  ><i class="bi bi-box-arrow-up-right"></i
-                ></a>
-              </div>
-            </div>
-            <div class="work" id="work">
-              <img src="images/work-3.png" alt="image" />
-              <div class="layer">
-                <h3>Online Shopping App</h3>
-                <p>
-                  The app contents you the talented people around the world.
-                  Download it from play store
-                </p>
-                <a href="https://github.com/Raksha914/E-commerce-Application"
-                  ><i class="bi bi-box-arrow-up-right"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <a href="https://github.com/Raksha914?tab=repositories" class="btn"
-            >See more</a
-          >
-        </div>
-      </div>
-
-      <!-- contact -->
-
-      <div id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="contact-left">
-              <h1 class="sub-title">Contact me</h1>
-              <p style="margin-left: 25px">
-                <i class="bi bi-send"></i>rakshaa818@gmail.com
-              </p>
-              <p style="margin-left: 25px">
-                <i class="bi bi-telephone"></i>
-                8431970396
-              </p>
-              <div class="social-icons">
-                <a href="https://facebook.com/"
-                  ><i class="bi bi-facebook"></i
-                ></a>
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/Raksha914?tab=repositories"
-                  ><i class="bi bi-github"></i
-                ></a>
-              </div>
-              <a
-                href="images/my-cv.pdf"
-                download=""
-                class="btn-btn2"
-                style="margin-left: 25px"
-                >Download CV</a
-              >
-            </div>
-            <div class="contact-right">
-              <form id="form-contact-me">
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Your Name"
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Your email"
-                  required
-                />
-                <textarea
-                  name="message"
-                  rows="6"
-                  placeholder="Your message"
-                ></textarea>
-                <br />
-                <button type="submit" class="btn-btn2" style="margin-top: 10px">
-                  Submit
-                </button>
-              </form>
-            </div>
+          <div class="contact-right">
+            <form id="form-contact-me">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <br />
+              <button type="submit" class="btn-btn2" style="margin-top: 10px">
+                Submit
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- footer -->
-    <footer
-      style="
-        background-color: #262626;
-        color: white;
-        padding: 20px 0;
-        text-align: center;
-      "
-    >
-      <p>
-        © 2024 Raksha with <i class="bi bi-heart-fill"></i>. All rights
-        reserved.
-      </p>
-    </footer>
 
     <script src="script.js"></script>
   </body>
