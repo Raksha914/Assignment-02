@@ -1,16 +1,23 @@
-const themeToggle = document.getElementById("themeToggle");
-themeToggle.addEventListener("click", () => {
-  document.body.classList.toggle("light-theme");
-  document.body.classList.add("header");
+document.getElementById("theme-change").addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
 
-  themeToggle.textContent = document.body.classList.contains("light-theme")
-    ? "Dark Mode"
-    : "Light Mode";
+  if (document.body.classList.contains("dark-mode")) {
+    this.textContent = "Light Mode";
+  } else {
+    this.textContent = "Dark Mode";
+  }
+});
 
-  //   const textElements = document.querySelectorAll("p, h1, h2, a");
-  //   textElements.forEach((el) => {
-  //     el.style.color = document.body.classList.contains("light-theme")
-  //       ? "#333"
-  //       : "#fff";
-  //   });
+const form = document.querySelector("form");
+const submitButton = document.querySelector(".btn-btn2");
+submitButton.addEventListener("click", function (event) {
+  event.preventDefault();
+
+  alert(
+    "Your response is received. I will contact you. Thank you for your response!"
+  );
+
+  form.reset();
+
+  window.location.href = "index.html";
 });
