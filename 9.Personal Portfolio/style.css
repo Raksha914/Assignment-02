@@ -2,7 +2,6 @@
   margin-left: 55%;
   gap: 10px;
 }
-
 .navbar-toggler-icon {
   width: 24px;
   height: 24px;
@@ -300,6 +299,14 @@ body.dark-mode button#theme-change {
 /* media querries */
 
 @media (max-width: 600px) {
+  .container-fluid span {
+    font-size: 20px;
+  }
+  .container-fluid #theme-change {
+    position: absolute;
+    top: 75px;
+    left: 50px;
+  }
   .container-fluid img {
     width: 20%;
   }
@@ -412,6 +419,9 @@ body.dark-mode button#theme-change {
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
+  .container-fluid span {
+    font-size: 30px;
+  }
   .container-fluid img {
     width: 20%;
   }
